@@ -34,7 +34,15 @@
  
  ;; 自动安装需要插件
  (require-package 'imenu-list)
+ (require-package 'evil)
  (require-package 'evil-leader)
+ (require-package 'autopair)
+ (require-package 'auto-complete)
+ (require-package 'company)
+ (require-package 'smex)
+ (require-package 'ido)
+ (require-package 'color-theme-sanityinc-tomorrow)
+ (require-package 'yasnippet)
 
 
 ;;  __        __             __   ___
