@@ -1,7 +1,7 @@
-* Emacs 配置
+# Emacs 配置
 
 
-** 文件结构
+## 文件结构
    - init.el: 配置文件入口
    - lisp: 配置文件模块
      - evil-mode.el:            evil 插件配置
