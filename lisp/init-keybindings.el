@@ -43,8 +43,8 @@
 
 ;; 设置leader 可以自定义按键
 (global-evil-leader-mode)
-;; (evil-leader/set-leader ",")
- (evil-leader/set-key
+(evil-leader/set-leader ",")
+(evil-leader/set-key
    ;; ,+w 打开当前文件中代码框架
   "w" 'imenu-list-smart-toggle
   "ff" 'find-file
