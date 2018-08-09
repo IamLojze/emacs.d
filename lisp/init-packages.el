@@ -43,6 +43,7 @@
  (require-package 'ido)
  (require-package 'color-theme-sanityinc-tomorrow)
  (require-package 'yasnippet)
+ (require-package 'switch-window)
 
 
 ;;  __        __             __   ___
