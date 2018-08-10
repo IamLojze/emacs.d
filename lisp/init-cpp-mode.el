@@ -21,13 +21,13 @@
 ;; 实现头文件和源文件直接快速切换
 (defun switch-c ()
   (global-set-key (kbd "<C-return>")  'ffap)
-  (evil-leader/set-key "," 'ff-find-other-file)
+  (evil-leader/set-key "<SPC>" 'ff-find-other-file)
 )
 (add-hook 'c-mode-hook 'switch-c)
 
 (defun switch-cpp ()
   (global-set-key (kbd "<C-return>")  'ffap)
-  (evil-leader/set-key "," 'ff-find-other-file)
+  (evil-leader/set-key "<SPC>" 'ff-find-other-file)
 )
 (add-hook 'c++-mode-hook 'switch-cpp)
 

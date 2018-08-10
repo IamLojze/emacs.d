@@ -40,17 +40,24 @@
 (define-key evil-visual-state-map (kbd "C-c") 'evil-exit-visual-state)
 (define-key key-translation-map [(control u)] [(meta v)])
 
-
 ;; 设置leader 可以自定义按键
 (global-evil-leader-mode)
-(evil-leader/set-leader ",")
+(evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
    ;; ,+w 打开当前文件中代码框架
   "w" 'imenu-list-smart-toggle
   "ff" 'find-file
   "fr" 'recentf-open-files
-  "0"  'select-window-0
+  "es" 'eshell
   "1"  'select-window-1
+  "2"  'select-window-2
+  "3"  'select-window-3
+  "4"  'select-window-4
+  "5"  'select-window-5
+  "6"  'select-window-6
+  "7"  'select-window-7
+  "8"  'select-window-8
+  "9"  'select-window-9
   )
 
 (provide 'init-keybindings.el)

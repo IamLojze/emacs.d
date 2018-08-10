@@ -43,43 +43,8 @@
  (require-package 'ido)
  (require-package 'color-theme-sanityinc-tomorrow)
  (require-package 'yasnippet)
- (require-package 'switch-window)
-
-
-;;  __        __             __   ___
-;; |__)  /\  /  ` |__/  /\  / _` |__
-;; |    /~~\ \__, |  \ /~~\ \__> |___
-;;                      __   ___        ___      ___
-;; |\/|  /\  |\ |  /\  / _` |__   |\/| |__  |\ |  |
-;; |  | /~~\ | \| /~~\ \__> |___  |  | |___ | \|  |
-;;
-;;(when (>= emacs-major-version 24)
-;;    (require 'package)
-;;    (package-initialize)
-;;    (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-;;                         ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
-;; 
-;; ;; cl - Common Lisp Extension
-;; ;;(require 'cl)
-;; 
-;; ;; Add Packages
-;; ;;(defvar my/packages '(
-;; 			   ;; --- Auto-completion ---
-;; 			   company
-;; 			   ;; --- Better Editor ---
-;; 			   smooth-scrolling
-;; 			   hungry-delete
-;; 			   swiper
-;; 			   counsel
-;; 			   smartparens
-;; 			   popwin
-;;                            imenu-list
-;;                            evil-leader
-;; 			   ;; --- Major Mode ---
-;; 			   js2-mode
-;; 			   markdown-mode
-;; 
-;; ...
+ (require-package 'magit)
+ (require-package 'window-numbering)
 
 ;; 文件末尾
 (provide 'init-packages)

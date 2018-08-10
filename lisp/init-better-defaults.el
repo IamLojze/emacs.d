@@ -64,4 +64,9 @@
 ;; auto-complete
 (ac-config-default)
 
+;; 窗口切换
+(setq window-numbering-assign-func
+      (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
+(window-numbering-mode 1)
+
 (provide 'init-better-defaults.el)
