@@ -49,6 +49,8 @@
   "ff" 'find-file
   "fr" 'recentf-open-files
   "es" 'eshell
+  "b"  'switch-to-buffer
+
   "1"  'select-window-1
   "2"  'select-window-2
   "3"  'select-window-3
