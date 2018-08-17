@@ -4,6 +4,7 @@
 ;;                       ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(message "This is C/Cpp Mode.")
 
 ; 开启全局 Company 补全
 (add-hook 'after-init-hook'global-company-mode)

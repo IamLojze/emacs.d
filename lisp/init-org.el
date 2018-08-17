@@ -16,6 +16,7 @@
 ;;   "Executable used for computing checksums of agenda files."
 ;;   :group 'org-mobile
 ;;   :type 'string)
+(message "This is Org mode.")
 
 (provide 'init-org.el)
 
