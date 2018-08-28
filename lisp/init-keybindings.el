@@ -16,7 +16,7 @@
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 
 ;; 设置 f2 为 yas 扩展快捷键
-(define-key yas-minor-mode-map (kbd "<f2>") 'yas-expand)
+;; (define-key yas-minor-mode-map (kbd "<f2>") 'yas-expand)
 
 ;; The following lines are always needed. Choose your own keys.
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -40,7 +40,18 @@
 (define-key evil-visual-state-map (kbd "C-c") 'evil-exit-visual-state)
 (define-key key-translation-map [(control u)] [(meta v)])
 
-;; 设置leader 可以自定义按键
+(setq mac-command-modifier 'super)
+(define-key evil-insert-state-map (kbd "s-v") 'yank)
+(define-key evil-insert-state-map (kbd "s-c") 'kill-ring-save)
+
+
+
+;; Mac 下将 Option 按键设置为 meta
+(setq mac-option-modifier 'meta)
+
+
+
+;; 设置leader 可以自定按键
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
@@ -62,8 +73,5 @@
   "9"  'select-window-9
   )
 
+
 (provide 'init-keybindings.el)
-
-
-;; Mac 下将 Option 按键设置为 meta
-(setq mac-option-modifier 'meta)

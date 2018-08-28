@@ -14,6 +14,9 @@
 ;; http://stackoverflow.com/questions/294664/how-to-set-the-font-size-in-emacs
 (set-face-attribute 'default nil :height 160)
 
+;; 设置字体
+(set-default-font "Courier New")
+
 ;; 设置光标样式
 (setq-default cursor-type 'bar)
 
@@ -28,5 +31,15 @@
 (setq default-tab-width 4)
 (setq c-default-style "Linux")
 (setq c-basic-offset 4)
+
+
+;; 设置窗口初始大小
+(setq default-frame-alist
+      `((top . 0)
+        (right. 0)
+        (width . 152)
+        (height . 60)
+        ))
+
 
 (provide 'init-ui.el)

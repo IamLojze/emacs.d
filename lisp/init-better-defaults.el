@@ -69,4 +69,10 @@
       (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
 (window-numbering-mode 1)
 
+
 (provide 'init-better-defaults.el)
+
+
+
+
+
