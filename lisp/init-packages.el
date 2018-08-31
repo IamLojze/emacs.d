@@ -45,6 +45,9 @@
  (require-package 'yasnippet)
  (require-package 'magit)
  (require-package 'window-numbering)
+ (require-package 'powerline)
+ (require-package 'irony)
+ (require-package 'flycheck-rtags)
 
 ;; 文件末尾
 (provide 'init-packages)
