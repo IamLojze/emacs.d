@@ -22,8 +22,10 @@
 
 ;; 安装主题
 (add-to-list 'load-path "~/.emacs.d/themes")
-(require 'color-theme-sanityinc-tomorrow)
-(customize-themes)
+(require 'nimbus-theme)
+(load-theme 'nimbus t)
+;; (require 'color-theme-sanityinc-tomorrow)
+;; (customize-themes)
 
 ;; 设置Tab键为空格
 (setq-default indent-tabs-mode nil)

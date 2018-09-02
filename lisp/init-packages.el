@@ -42,6 +42,7 @@
  (require-package 'smex)
  (require-package 'ido)
  (require-package 'color-theme-sanityinc-tomorrow)
+ (require-package 'nimbus-theme)
  (require-package 'yasnippet)
  (require-package 'magit)
  (require-package 'window-numbering)
