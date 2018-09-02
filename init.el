@@ -35,6 +35,13 @@
 )
 (add-hook 'c-mode-common-hook 'my-cpp-mode-hook)
 
+;; EShell Mode Configer
+(defun my-eshell-mode-hook()
+  "This is the function of eshell mode hook."
+  (require 'init-eshell-mode.el)
+)
+(add-hook 'eshell-mode-hook 'my-eshell-mode-hook)
+
 
 
 
