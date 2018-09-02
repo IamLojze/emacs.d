@@ -8,6 +8,7 @@
 (outline-minor-mode t)
 (color-theme-my-eshell)
 
+
 (setq outline-regexp "^[^#$\n]* [#>]+ "
       scroll-margin 0
       eshell-scroll-to-bottom-on-input t
