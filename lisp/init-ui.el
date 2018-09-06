@@ -18,7 +18,7 @@
 (set-default-font "Courier New")
 
 ;; 设置光标样式
-(setq-default cursor-type 'bar)
+;; (setq-default cursor-type 'bar)
 
 ;; 安装主题
 (add-to-list 'load-path "~/.emacs.d/themes")
@@ -36,10 +36,22 @@
 
 ;; 在X-window模式启动时隐藏工具栏，滚动条
 (defun x-window-config()
+
+  ;; No tool bar
+  (if (fboundp 'tool-bar-mode)
+      (tool-bar-mode -1))
+
+  ;; No scroll bar
+  (if (fboundp 'set-scroll-bar-mode)
+      (set-scroll-bar-mode nil))
+
+  ;; No menu bar
+  (if (fboundp 'menu-bar-mode)
+      (menu-bar-mode -1))
 ;;  (powerline-center-evil-theme)
-  (setq x-select-enable-clipboard 1)
-  (tool-bar-mode 0)
-  (scroll-bar-mode 0)
+;;  (setq x-select-enable-clipboard 1)
+;;  (tool-bar-mode 0)
+;;  (scroll-bar-mode 0)
 )
 (if window-system (x-window-config))
 
