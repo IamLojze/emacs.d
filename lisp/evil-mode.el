@@ -40,6 +40,7 @@
   "gc" 'magit-commit
   "gp" 'magit-push
   "gd" 'magit-pull
+  "gl" 'magit-log-all
   )
 
 (provide 'evil-mode.el)
