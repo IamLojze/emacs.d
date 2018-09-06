@@ -13,7 +13,7 @@
   (push '(?= . ("=" . "=")) evil-surround-pairs-alist))
 (add-hook 'org-mode-hook 'evil-surround-org-mode-hook-setup)
 
-;; 设置leader 可以自定按键
+;; 设置 Leader 可以自定按键
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
@@ -35,7 +35,7 @@
   "7"  'select-window-7
   "8"  'select-window-8
   "9"  'select-window-9
-  ;; 正对git的操作
+  ;; 针对 Git 的操作
   "gs" 'magit-status
   "gc" 'magit-commit
   "gp" 'magit-push
