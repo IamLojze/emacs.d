@@ -20,7 +20,7 @@
    ;; ,+w 打开当前文件中代码框架
   "w" 'imenu-list-smart-toggle
   "ff" 'find-file
-  "fr" 'recentf-open gs-files
+  "fr" 'recentf-open-files
   "es" 'eshell
   "b"  'switch-to-buffer
   "kk" 'scroll-other-window

@@ -13,6 +13,7 @@
 (require 'init-ui.el)
 
 (require 'init-keybindings.el)
+(require 'init-markdown.el)
 
 ;; Org mode configer
 (defun my-org-mode-hook()

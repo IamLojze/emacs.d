@@ -48,10 +48,6 @@
   ;; No menu bar
   (if (fboundp 'menu-bar-mode)
       (menu-bar-mode -1))
-;;  (powerline-center-evil-theme)
-;;  (setq x-select-enable-clipboard 1)
-;;  (tool-bar-mode 0)
-;;  (scroll-bar-mode 0)
 )
 (if window-system (x-window-config))
 
