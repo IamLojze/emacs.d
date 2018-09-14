@@ -16,6 +16,7 @@
 (require 'init-markdown.el)
 
 (require 'init-web-mode.el)
+(require 'init-blog-mode.el)
 
 ;; Org mode configer
 (defun my-org-mode-hook()
