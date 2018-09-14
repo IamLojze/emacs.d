@@ -4,7 +4,9 @@
 ;;                       ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(message "This is C/Cpp Mode.")
+
+(require-package 'auto-complete)
+(require-package 'company)
 
 ; 开启全局 Company 补全
 (add-hook 'after-init-hook'global-company-mode)
@@ -14,9 +16,9 @@
 (require-package 'fill-column-indicator)
 
 ;; CPP插件配置
-(setq fci-rule-column 80) ;; 80 个字节处画竖线
-(setq fci-rule-color "orange") ;; 竖线为黄色
-(setq fci-rule-width 2) ;; 竖线宽度为 2 个像素
+;;(setq fci-rule-column 80) ;; 80 个字节处画竖线
+;;(setq fci-rule-color "orange") ;; 竖线为黄色
+;;(setq fci-rule-width 2) ;; 竖线宽度为 2 个像素
 ;;(fci-mode 1) ;; 开启 fci 模式
 
 ;; 实现头文件和源文件直接快速切换
@@ -32,5 +34,6 @@
 )
 (add-hook 'c++-mode-hook 'switch-cpp)
 
+(message "This is C/Cpp Mode.")
 
 (provide 'init-cpp-mode.el)

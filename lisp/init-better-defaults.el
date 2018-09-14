@@ -50,6 +50,12 @@
       (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
 (window-numbering-mode 1)
 
+;; 将Emacs的滚动方式设置为平滑滚动
+;;(setq smooth-scrooll-margin 3)
+(setq scroll-margin 5
+      scroll-conservatively 9999
+      scroll-step 1)
+
 
 (provide 'init-better-defaults.el)
 

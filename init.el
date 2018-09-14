@@ -15,6 +15,8 @@
 (require 'init-keybindings.el)
 (require 'init-markdown.el)
 
+(require 'init-web-mode.el)
+
 ;; Org mode configer
 (defun my-org-mode-hook()
   "This is the function of org mode hook."
@@ -58,7 +60,7 @@
  '(org-agenda-files (quote ("~/SynologyDrive/Org/SinaWorkFlow.org")))
  '(package-selected-packages
    (quote
-    (org-mobile-sync color-theme-sanityinc-tomorrow evil auto-complete yasnippet autopair smex smartparens nodejs-repl monokai-theme js2-mode hungry-delete exec-path-from-shell counsel company color-theme colemak-evil))))
+    (org2blog org-mobile-sync color-theme-sanityinc-tomorrow evil auto-complete yasnippet autopair smex smartparens nodejs-repl monokai-theme js2-mode hungry-delete exec-path-from-shell counsel company color-theme colemak-evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

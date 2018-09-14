@@ -44,10 +44,7 @@
 (define-key evil-insert-state-map (kbd "s-v") 'yank)
 (define-key evil-insert-state-map (kbd "s-c") 'kill-ring-save)
 
-
-
 ;; Mac 下将 Option 按键设置为 meta
 (setq mac-option-modifier 'meta)
-
 
 (provide 'init-keybindings.el)

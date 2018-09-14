@@ -7,11 +7,11 @@
 
 (setq evil-default-cursor t)
 
-(defun evil-surround-org-mode-hook-setup ()
-  (push '(91 . ("[" . "]")) evil-surround-pairs-alist)
-  (push '(93 . ("[" . "]")) evil-surround-pairs-alist)
-  (push '(?= . ("=" . "=")) evil-surround-pairs-alist))
-(add-hook 'org-mode-hook 'evil-surround-org-mode-hook-setup)
+;;(defun evil-surround-org-mode-hook-setup ()
+;;  (push '(91 . ("[" . "]")) evil-surround-pairs-alist)
+;;  (push '(93 . ("[" . "]")) evil-surround-pairs-alist)
+;;  (push '(?= . ("=" . "=")) evil-surround-pairs-alist))
+;;(add-hook 'org-mode-hook 'evil-surround-org-mode-hook-setup)
 
 ;; 设置 Leader 可以自定按键
 (global-evil-leader-mode)
@@ -21,6 +21,7 @@
   "w" 'imenu-list-smart-toggle
   "ff" 'find-file
   "fr" 'recentf-open-files
+  "fd" 'dired-other-window
   "es" 'eshell
   "b"  'switch-to-buffer
   "kk" 'scroll-other-window
