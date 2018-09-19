@@ -24,6 +24,7 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key "\C-xw" 'elfeed)
 
 ;; 针对 evil 的按键绑定
 ;;取消q 的功能
@@ -43,6 +44,7 @@
 (setq mac-command-modifier 'super)
 (define-key evil-insert-state-map (kbd "s-v") 'yank)
 (define-key evil-insert-state-map (kbd "s-c") 'kill-ring-save)
+
 
 ;; Mac 下将 Option 按键设置为 meta
 (setq mac-option-modifier 'meta)

@@ -42,6 +42,11 @@
   "gp" 'magit-push
   "gd" 'magit-pull
   "gl" 'magit-log-all
+
+  ;;正对 org2blog 操作
+  "ln" 'org2blog/wp-new-entry
+  "lp" 'org2blog/wp-post-buffer-and-publish
+  "ls" 'org2blog/wp-post-buffer
   )
 
 (provide 'evil-mode.el)

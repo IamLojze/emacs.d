@@ -4,8 +4,11 @@
 ;;                       ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(require 'org)
+;; Org 2 markdown
+(require 'auto-org-md)
+
 ;; 同步 Org-mode 同步有问题，暂时不使用
- (require 'org)
  ;; Set to the location of your Org files on your local system
 ;; (setq org-directory "/Users/lojze/SynologyDrive/Org")
 ;;  ;; Set to the name of the file where new notes will be stored

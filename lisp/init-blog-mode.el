@@ -23,6 +23,15 @@
            :wp-code nil
            :tags-as-categories nil))))
 
+(setq org2blog/wp-buffer-template
+  "#+DATE: %s
+#+OPTIONS: 
+#+CATEGORY: 随笔
+#+TAGS:
+#+PERMALINK:
+#+TITLE:
+\n")
+
 ;; Org2blog 支持发布中午博客
 (advice-add 'url-http-create-request :override
             'url-http-create-request-debug)

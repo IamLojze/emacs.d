@@ -51,6 +51,10 @@
 (require-package 'php-mode)
 (require-package 'web-mode)
 (require-package 'emmet-mode)
+(require-package 'auto-org-md)
+(require-package 'elfeed)
+(require-package 'use-package)
+
 
 ;; 文件末尾
 (provide 'init-packages)
