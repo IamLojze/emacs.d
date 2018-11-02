@@ -24,8 +24,8 @@
   "fd" 'dired-other-window
   "es" 'eshell
   "b"  'switch-to-buffer
-  "kk" 'scroll-other-window
-  "jj" 'scroll-other-window-down
+  "kk" 'scroll-other-window-down
+  "jj" 'scroll-other-window
   "pw" 'pwd
   "1"  'select-window-1
   "2"  'select-window-2
