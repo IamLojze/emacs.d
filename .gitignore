@@ -8,4 +8,6 @@ plugins
 ido.last
 smex-itemstramp
 smex-items
+trampnetwork-security.data
+network-security.data
 tramp
