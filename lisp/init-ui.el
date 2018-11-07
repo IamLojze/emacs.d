@@ -55,12 +55,12 @@
 (global-hl-line-mode t)
 
 ;; 设置窗口初始大小
-(setq default-frame-alist
-      `((top . 0)
-        (right. 0)
-        (width . 170)
-        (height . 63)
-        ))
+;; (setq default-frame-alist
+;;       `((top . 0)
+;;         (right. 0)
+;;         (width . 170)
+;;         (height . 63)
+;;         ))
 
 ;; 设置 CMake 支持
 (setq load-path(cons (expand-file-name "~/.emacs.d/plugins") load-path))
