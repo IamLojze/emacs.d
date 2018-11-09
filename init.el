@@ -13,10 +13,14 @@
 (require 'init-ui.el)
 
 (require 'init-keybindings.el)
+
 (require 'init-markdown.el)
 
 (require 'init-web-mode.el)
+
 (require 'init-blog-mode.el)
+
+(require 'init-go-mode.el)
 
 ;; Org mode configer
 (defun my-org-mode-hook()
