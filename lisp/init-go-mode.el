@@ -14,25 +14,41 @@
 (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 
 ;;auto-complete
- (require 'auto-complete-config)
- (ac-config-default)
- (local-set-key (kbd "M-/") 'semantic-complete-analyze-inline)
- (local-set-key "." 'semantic-complete-self-insert)
- (local-set-key ">" 'semantic-complete-self-insert)
+(add-to-list 'load-path "/Users/lojze/.emacs.d/plugins")
+(require 'auto-complete-config)
+(require 'go-autocomplete)
+(ac-config-default)
+(setq ac-use-menu-map t)
+(define-key ac-menu-map "\C-n" 'ac-next)
+(define-key ac-menu-map "\C-p" 'ac-previous)
 
-;;(require 'go-mode)
-;;(require 'flymake-go)
+(add-hook 'go-mode-hook 'company-mode)
+(add-hook 'go-mode-hook (lambda ()
+(set (make-local-variable 'company-backends) '(company-go))
+(company-mode)))
 
-;; 保持文件时格式化代码
+;; 保存文件时格式化代码
 (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; 为删除或者注释掉没有用到的import绑定快捷键
 (add-hook 'go-mode-hook (lambda()
                          (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
 
+;; 取消语法检测
+;; 对Go执行语法检测
+;; (require 'go-flymake)
+;; (add-hook 'flymake-mode-hook
+;;       (lambda()
+;;         (local-set-key (kbd "C-c C-e n") 'flymake-goto-next-error)))
+;; (add-hook 'flymake-mode-hook
+;;       (lambda()
+;;         (local-set-key (kbd "C-c C-e p") 'flymake-goto-prev-error)))
+;; (add-hook 'flymake-mode-hook
+;;       (lambda()
+;;         (local-set-key (kbd "C-c C-e m") 'flymake-popup-current-error-menu)))
+
  ;; golang mode
  (require 'go-mode)
- (require 'go-autocomplete)
  ;; speedbar
  ;; (speedbar 1)
  (speedbar-add-supported-extension ".go")
