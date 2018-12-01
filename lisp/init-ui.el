@@ -10,6 +10,12 @@
 ;; 关闭启动帮助画面
  (setq inhibit-splash-screen 1)
 
+;;设置默认读入文件编码
+(prefer-coding-system 'utf-8)
+
+;;设置写入文件编码
+(setq default-buffer-file-coding-system 'utf-8)
+
 ;; 更改显示字体大小 16pt
 ;; http://stackoverflow.com/questions/294664/how-to-set-the-font-size-in-emacs
 (set-face-attribute 'default nil :height 150)
